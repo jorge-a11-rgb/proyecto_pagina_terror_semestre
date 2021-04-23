@@ -1,0 +1,54 @@
+body{
+
+    background-image: url(https://www.wallpapertip.com/wmimgs/67-676061_48-horror-wallpaper-and-photo-in-hd-for.jpg);
+     background-size: 150%;
+}
+.form-group label{
+    color: aliceblue;
+    
+  
+}
+footer a{
+    color: rgb(57, 39, 158);
+    text-align: right;
+    background-color: cornflowerblue;
+}
+footer{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+}
+.Titulo2 h1{
+    color: aliceblue;
+    text-align: center;
+}
+.container{
+    background-size: 150%
+
+}
+.form-check{
+    display: inline-block;
+    text-align: center;
+}
+.from-group p{
+    color: aliceblue;
+}
+footer a {
+    width: 100px;
+     padding: 20px;
+}
+footer a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer{
+    float: right;
+    padding: 100px;
+}
+.container-sm{
+    color: aliceblue;
+    text-align: center;
+    
+}
+    
