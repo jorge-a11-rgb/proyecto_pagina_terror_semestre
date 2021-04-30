@@ -26,33 +26,28 @@ $("#formulario1").validate({
             required: true,
             equalTo: '#id_txtTelefono'
         },
-        "txtContrasena":{
+        "txtContrasena": {
             required: true,
             password: true
         },
-        "txtRepetirContrasena":{
-           required: true,
+        "txtRepetirContrasena": {
+            required: true,
             equalTo: '#id_txtContrasena'
         }
 
     }, // --> Fin de reglas
     messages: {
-        "txtContrasena":{
+        "txtContrasena": {
             required: 'Ingrese su contraseña!!!'
 
         },
-        "txtRepetirContrasena":{
+        "txtRepetirContrasena": {
             required: 'Repita su contraseña!!!',
             equalTo: 'La contraseña no es igual a la primera!!!!'
 
         },
-        "txtDireccion":{
+        "txtDireccion": {
             required: 'Ingrese su direccion!!!'
-
-        },
-        "rut": {
-            required: 'Ingrese rut!!!!',
-            
 
         },
         "txtEmail": {
@@ -73,7 +68,7 @@ $("#formulario1").validate({
         },
         "txtApellido": {
             required: 'Ingrese sus apelllidos!!!',
-            
+
 
         },
         "txtFechaNacimiento": {
