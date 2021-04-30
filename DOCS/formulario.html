@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
     <link href="/DOCS/CSS/estilo_formulario.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="/DOCS/js/validacion_run.js">
+    <link rel="stylesheet" href="/DOCS/js/funcion_animacion.js">
+  
 
 </head>
 
@@ -15,66 +21,77 @@
             <h1>Registrate con nosotros</h1>
 
         </div>
-
+       
         <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+              <div class="container-md">
+                <p>
+                    Registrate para poder recibin noticias de peliculas de terror, poder solictar peliculas, has click aqui para que el mensaje desapresca
+                </p>
 
-                <div class="container-md">
-                    <p>
-                        Registrate para poder recibin noticias de peliculas de terror, poder solictar peliculas, has click aqui para que el mensaje desapresca
-                    </p>
-
-                </div>
+            </div>
                 <form method="POST" id="formulario1" action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+                     <div class="form-group">
+                        <label for="rut">RUN</label>
+                       <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT aqui">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtNombre">Nombres</label>
-                        <input type="text" name="txtNombre" class="form-control" id="id_txtNombre" placeholder="Ingrese sus nombres aqui, largo minimo 3 caracteres" required="">
+                       <input type="text" name="txtNombre" class="form-control" id="id_txtNombre"
+                            placeholder="Ingrese sus nombres aqui" required="">
                     </div>
                     <div class="form-group">
                         <label for="id_txtApellido">Apellidos</label>
-                        <input type="text" name="txtApellido" class="form-control" id="id_txtApellido" placeholder="Ingrese sus apellidos aqui, largo minimo 3 caracteres" required="">
+                       <input type="text" name="txtApellido" class="form-control" id="id_txtApellido"
+                            placeholder="Ingrese sus apellidos aqui" required="">
                     </div>
                     <div class="form-group">
                         <label for="id_txtEmail">Email</label>
-                        <input type="email" name="txtEmail" class="form-control" id="id_txtEmail" aria-describedby="emailHelp" placeholder="Ingrese su email aquí">
+                       <input type="email" name="txtEmail" class="form-control" id="id_txtEmail"
+                            aria-describedby="emailHelp" placeholder="Ingrese su email aquí">
                     </div>
-
-                    <div class="form-group">
+                   
+                     <div class="form-group">
                         <label for="id_txtDireccion">Direccion</label>
-                        <input type="text" name="txtDireccion" class="form-control" id="id_txtDireccion" placeholder="Ingrese su direccion aqui" required="">
+                       <input type="text" name="txtDireccion" class="form-control" id="id_txtDireccion"
+                        placeholder="Ingrese su direccion aqui" required=""> 
                     </div>
                     <div class="form-group">
                         <label for="id_txtTelefono">Telefono</label>
-                        <input type="number" max="999999999" class="form-control" name="txtTelefono" required="" id="id_txtTelefono" placeholder="Ingrese su telefono aqui, maximo 9 digitos">
+                        <input type="number" max="999999999" class="form-control" name="txtTelefono" required=""
+                        
+                            id="id_txtTelefono" placeholder="Ingrese su telefono aqui, maximo 9 digitos">
                     </div>
                     <div class="form-group">
                         <label for="id_txtRepetirTelefono">Repetir telefono</label>
-                        <input type="number" class="form-control" name="txtRepetirTelefono" required="" id="id_txtRepetirTelefono" placeholder="Ingrese otra vez su numero aqui">
+                        <input type="number" class="form-control" name="txtRepetirTelefono" required=""
+                            id="id_txtRepetirTelefono" placeholder="Ingrese otra vez su numero aqui">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtFechaNacimiento">Fecha de nacimiento</label>
-                        <input type="date" max="2010-12-31" class="form-control" name="txtFechaNacimiento" required="" id="id_txtFechaNacimiento">
+                        <input type="date" max="2010-12-31" class="form-control" name="txtFechaNacimiento" required=""
+                            id="id_txtFechaNacimiento" >
                     </div>
                     <div class="form-group">
                         <label for="id_txtContrasena">Contraseña</label>
-                        <input type="password" class="form-control" name="txtContrasena" required="" id="id_txtContrasena" placeholder="Ingrese su contraseña">
+                        <input type="password" class="form-control" name="txtContrasena" required=""
+                            id="id_txtContrasena" placeholder="Ingrese su contraseña">
                     </div>
                     <div class="form-group">
                         <label for="id_txtRepetirContrasena">Repetir Contraseña</label>
-                        <input type="password" class="form-control" name="txtRepetirContrasena" required="" id="id_txtRepetirContrasena" placeholder="Repita su contraseña">
+                        <input type="password" class="form-control" name="txtRepetirContrasena" required=""
+                            id="id_txtRepetirContrasena" placeholder="Repita su contraseña">
                     </div>
-
+                    
                     <div class="form-group">
                         <h2>
                             Tipos de peliculas
                         </h2>
-                        <select name="age" class="required" name="cmbEdades">
+                            <select  class="required" name="categorias">
                                 <option value="">-- Seleccionar --</option>
                                 <option value="Terror clasico">Terror clasico</option>
                                 <option value="Terror supenso">Terror supenso</option>
@@ -82,49 +99,49 @@
                                 <option value="Terror accion">Terror accion</option>
                                 <option value="Terror horror">Terror horror</option>
                             </select>
-                    </div>
-                    <div class="form-group">
-                        <h2>
-                            Sexo
-                        </h2>
-                        <label>
-                                <input type="radio" name="fruit" class="required"> Masculino
+                        </div>
+                        <div class="form-group">
+                            <h2>
+                                Sexo
+                            </h2>
+                            <label>
+                                <input type="radio" name="sexo" class="required"> Masculino
                             </label>
-                        <label>
-                                <input type="radio" name="fruit" class="required"> Femenino
+                            <label>
+                                <input type="radio" name="sexo" class="required"> Femenino
                             </label>
-                    </div>
-                    <div class="form-check">
-
+                        </div>
+                        <div class="form-check">
+                      
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                     <div class="form-check">
-
+                      
                         <button type="reset" class="btn btn-primary">Limpiar</button>
                     </div>
+                        </div>
+
                 </form>
             </div>
-
         </div>
     </div>
-    </div>
-
+   
     <footer>
-
-        <a href="./index.html">Volver</a>
+       
+                   <a href="./index.html">Volver</a>
 
     </footer>
 
+ 
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="/DOCS/js/funcion_animacion.js"></script>
+    <script src="/DOCS/js/validacion_run.js"></script>
+     <script src="/DOCS/js/validacion.js"></script>
+     <script src="/DOCS/js/mensajes_es.js"></script>
+    <script src="/DOCS/js/contrasena.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
-    <script src="./js/validacion_run.js"></script>
-    <script src="js/funcion_animacion.js"></script>
-
-
-
+    
+    
 </body>
 
 </html>>
