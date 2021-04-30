@@ -9,9 +9,9 @@ body{
   
 }
 footer a{
-    color: rgb(57, 39, 158);
+    color: rgb(104, 1, 1);
     text-align: right;
-    background-color: cornflowerblue;
+    background-color: rgb(0, 0, 0);
 }
 footer{
     text-align: center;
@@ -39,7 +39,7 @@ footer a {
      padding: 20px;
 }
 footer a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(252, 0, 0);
     text-decoration: none;
 }
 footer{
@@ -51,4 +51,39 @@ footer{
     text-align: center;
     
 }
+p{
+    padding: 20px;
+    font: 20px sans-serif;
+    background: rgb(0, 0, 0);
     
+    width: 50%;
+    border: 2px solid rgb(105, 0, 0);
+    color: aliceblue;
+}
+
+ .form-group h2{
+     color: aliceblue;
+ } 
+ #id_txtNombre{
+    width: 500px;
+ }
+  #id_txtApellido{
+    width: 500px;
+  }
+
+  #id_txtEmail{
+      width: 800px;
+  }
+  #id_txtDireccion{
+      width: 500px;
+  }
+  #id_txtTelefono{
+       width: 350px;
+  }
+  #id_txtRepetirTelefono{
+       width: 350px;
+  }
+#id_txtFechaNacimiento{
+    width: 50%;
+
+}

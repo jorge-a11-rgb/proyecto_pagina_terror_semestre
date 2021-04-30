@@ -9,6 +9,8 @@
     <script language="javascript" type="text/javascript"
         src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
     <link href="/DOCS/CSS/estilo_formulario.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/DOCS/js/validacion_run.js">
+    <link rel="stylesheet" href="/DOCS/js/funcion_animacion.js">
   
 
 </head>
@@ -23,23 +25,28 @@
         <div class="row">
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <!-- Inicio form -->
+    
+              <div class="container-md">
+                <p>
+                    Registrate para poder recibin noticias de peliculas de terror, poder solictar peliculas, has click aqui para que el mensaje desapresca
+                </p>
+
+            </div>
                 <form method="POST" id="formulario1" action="">
                      <div class="form-group">
-                        <label for="id_txtRUN">RUN</label>
-                       <input type="text" name="txtRUN" class="form-control" id="id_txtRUN"
-                        placeholder="Ingrese sin puntos y guion" required=""> 
+                        <label for="rut">RUN</label>
+                       <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT aqui">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtNombre">Nombres</label>
                        <input type="text" name="txtNombre" class="form-control" id="id_txtNombre"
-                            placeholder="Ingrese sus nombres aqui" required="">
+                            placeholder="Ingrese sus nombres aqui, largo minimo 3 caracteres" required="">
                     </div>
                     <div class="form-group">
                         <label for="id_txtApellido">Apellidos</label>
                        <input type="text" name="txtApellido" class="form-control" id="id_txtApellido"
-                            placeholder="Ingrese sus apellidos aqui" required="">
+                            placeholder="Ingrese sus apellidos aqui, largo minimo 3 caracteres" required="">
                     </div>
                     <div class="form-group">
                         <label for="id_txtEmail">Email</label>
@@ -79,7 +86,32 @@
                         <input type="password" class="form-control" name="txtRepetirContrasena" required=""
                             id="id_txtRepetirContrasena" placeholder="Repita su contraseña">
                     </div>
-                    <div class="form-check">
+                    
+                    <div class="form-group">
+                        <h2>
+                            Tipos de peliculas
+                        </h2>
+                            <select name="age" class="required" name="cmbEdades">
+                                <option value="">-- Seleccionar --</option>
+                                <option value="Terror clasico">Terror clasico</option>
+                                <option value="Terror supenso">Terror supenso</option>
+                                <option value="Terror psicologico">Terror psicologico</option>
+                                <option value="Terror accion">Terror accion</option>
+                                <option value="Terror horror">Terror horror</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>
+                                Sexo
+                            </h2>
+                            <label>
+                                <input type="radio" name="fruit" class="required"> Masculino
+                            </label>
+                            <label>
+                                <input type="radio" name="fruit" class="required"> Femenino
+                            </label>
+                        </div>
+                        <div class="form-check">
                       
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
@@ -87,6 +119,7 @@
                       
                         <button type="reset" class="btn btn-primary">Limpiar</button>
                     </div>
+                        </div>
 
                 </form>
             </div>
@@ -95,12 +128,18 @@
    
     <footer>
        
-                   <a href="/pagina_principal.html">Volver</a>
+                   <a href="./index.html">Volver</a>
 
     </footer>
 
-    <!-- Hacemos el llamado a los validadores, que estan en la carpeta js  -->
-    <script src="js/validacion.js" type="text/javascript"></script>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="/DOCS/js/funcion_animacion.js"></script>
+    <script src="/DOCS/js/validacion_run.js"></script>
+     <script src="/DOCS/js/validacion.js"></script>
+    <script src="/DOCS/js/contrasena.js"></script>
+
+    
     
 </body>
 
