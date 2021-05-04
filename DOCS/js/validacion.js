@@ -6,6 +6,10 @@ $(document).ready(function () {
                 minlength: 3
 
             },
+            rut:{
+                required:true,
+                checkRut();
+            },
             txtApellido: {
                 required: true,
                 minlength: 3
@@ -16,8 +20,7 @@ $(document).ready(function () {
                 email: true
             },
             txtTelefono: {
-                required: true,
-                max: 999999999
+                required: true
             },
             txtRepetirTelefono: {
                 required: true,
@@ -44,7 +47,7 @@ $(document).ready(function () {
             }
 
 
-        },
+        }
 
     });
 

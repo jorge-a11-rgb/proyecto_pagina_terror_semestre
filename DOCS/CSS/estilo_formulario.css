@@ -3,10 +3,8 @@ body{
     background-image: url(https://www.wallpapertip.com/wmimgs/67-676061_48-horror-wallpaper-and-photo-in-hd-for.jpg);
      background-size: 150%;
 }
-.form-group label{
+.form-group{
     color: aliceblue;
-    
-  
 }
 footer a{
     color: rgb(104, 1, 1);
@@ -19,10 +17,6 @@ footer{
 .logo{
     text-align: center;
 }
-.Titulo2 h1{
-    color: aliceblue;
-    text-align: center;
-}
 .container{
     background-size: 150%
 
@@ -30,9 +24,6 @@ footer{
 .form-check{
     display: inline-block;
     text-align: center;
-}
-.from-group p{
-    color: aliceblue;
 }
 footer a {
     width: 100px;
@@ -60,10 +51,6 @@ p{
     border: 2px solid rgb(105, 0, 0);
     color: aliceblue;
 }
-
- .form-group h2{
-     color: aliceblue;
- } 
  #id_txtNombre{
     width: 500px;
  }

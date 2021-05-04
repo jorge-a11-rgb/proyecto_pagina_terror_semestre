@@ -9,7 +9,7 @@
     <script language="javascript" type="text/javascript"
         src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
     <link href="/DOCS/CSS/estilo_formulario.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/DOCS/js/validacion_run.js">
+    <!-- <link rel="stylesheet" href="/DOCS/js/validacion_run.js"> -->
     <link rel="stylesheet" href="/DOCS/js/funcion_animacion.js">
   
 
@@ -35,13 +35,13 @@
                 <form method="POST" id="formulario1" action="">
                      <div class="form-group">
                         <label for="rut">RUN</label>
-                       <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT aqui">
+                       <input class="form-text" type="text" id="id_rut" name="rut" required placeholder="Ingrese RUT aqui" maxlength="10" oninput="checkRut(this)">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtNombre">Nombres</label>
                        <input type="text" name="txtNombre" class="form-control" id="id_txtNombre"
-                            placeholder="Ingrese sus nombres aqui" required="">
+                            placeholder="Ingrese sus nombres aqui" required>
                     </div>
                     <div class="form-group">
                         <label for="id_txtApellido">Apellidos</label>
@@ -61,14 +61,15 @@
                     </div>
                     <div class="form-group">
                         <label for="id_txtTelefono">Telefono</label>
-                        <input type="number" max="999999999" class="form-control" name="txtTelefono" required=""
+                        <input type="tel" maxlength="9" class="form-control" name="txtTelefono" required=""
                         
                             id="id_txtTelefono" placeholder="Ingrese su telefono aqui, maximo 9 digitos">
                     </div>
                     <div class="form-group">
                         <label for="id_txtRepetirTelefono">Repetir telefono</label>
-                        <input type="number" class="form-control" name="txtRepetirTelefono" required=""
-                            id="id_txtRepetirTelefono" placeholder="Ingrese otra vez su numero aqui">
+                        <input type="tel" class="form-control" name="txtRepetirTelefono" required=""
+                            id="id_txtRepetirTelefono" placeholder="Ingrese otra vez su numero aqui"
+                            maxlength="9">
                     </div>
 
                     <div class="form-group">
@@ -88,9 +89,9 @@
                     </div>
                     
                     <div class="form-group">
-                        <h2>
+                        <h3>
                             Tipos de peliculas
-                        </h2>
+                        </h3>
                             <select  class="required" name="categorias">
                                 <option value="">-- Seleccionar --</option>
                                 <option value="Terror clasico">Terror clasico</option>
@@ -101,15 +102,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <h2>
+                            <h3>
                                 Sexo
-                            </h2>
-                            <label>
+                            </h3>
                                 <input type="radio" name="sexo" class="required"> Masculino
-                            </label>
-                            <label>
                                 <input type="radio" name="sexo" class="required"> Femenino
-                            </label>
                         </div>
                         <div class="form-check">
                       
@@ -134,11 +131,11 @@
 
  
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="/DOCS/js/funcion_animacion.js"></script>
-    <script src="/DOCS/js/validacion_run.js"></script>
-     <script src="/DOCS/js/validacion.js"></script>
-     <script src="/DOCS/js/mensajes_es.js"></script>
-    <script src="/DOCS/js/contrasena.js"></script>
+    <script src="./js/funcion_animacion.js"></script>
+    <script src="./js/validacion.js"></script>
+    <script src="./js/validacion_run.js"></script>
+     <script src="./js/mensajes_es.js"></script>
+    <!-- <script src="/DOCS/js/contrasena.js"></script> -->
 
     
     
