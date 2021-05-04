@@ -856,4 +856,17 @@ height: 1px;
   }
   .navegacion ul li a:hover{
     color: rgb(97, 0, 0);
-}
+  }
+  #slipeUp p{
+    text-align: center;
+    
+    padding: 20px;
+    font: 20px sans-serif;
+    background: rgb(0, 0, 0);
+    
+    width: 50%;
+    border: 2px solid rgb(105, 0, 0);
+    color: aliceblue;
+    
+    
+  }

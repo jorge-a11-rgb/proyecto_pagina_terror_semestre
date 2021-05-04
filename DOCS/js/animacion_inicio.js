@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#slideUp").click(function(){
+    $("#lateral_2").click(function(){
         $(this).slideUp();
     });
-})
+});
