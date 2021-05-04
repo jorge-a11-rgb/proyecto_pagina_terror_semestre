@@ -6,8 +6,8 @@ $(document).ready(function () {
                 minlength: 3
 
             },
-            rut:{
-                required:true,
+            rut: {
+                required: true,
                 checkRut();
             },
             txtApellido: {
@@ -26,7 +26,7 @@ $(document).ready(function () {
                 required: true,
                 equalTo: '#id_txtTelefono'
             },
-            txtFechaNacimiento:{
+            txtFechaNacimiento: {
                 required: true,
                 date: true
             },
@@ -38,11 +38,11 @@ $(document).ready(function () {
                 required: true,
                 equalTo: '#id_txtContrasena'
             },
-            categorias:{
+            categorias: {
                 required: true
             },
 
-            sexo:{
+            sexo: {
                 required: true
             }
 
