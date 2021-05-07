@@ -72,6 +72,17 @@ p{
        width: 350px;
   }
 #id_txtFechaNacimiento{
-    width: 50%;
+    width: auto;
 
+}
+#contenedor_registros{
+    
+    
+    text-align: center;
+    
+}
+#tablaprueba{
+    text-align: center;
+    color: aliceblue;
+    
 }
