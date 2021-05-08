@@ -35,56 +35,56 @@
                 <form method="POST" id="formulario1" action="">
                      <div class="form-group">
                         <label for="rut">RUN</label>
-                       <input class="form-text" type="text" id="id_rut" name="rut" required placeholder="Ingrese RUT aqui" maxlength="10" oninput="checkRut(this)">
+                       <input class="form-text" type="text" id="id_rut" name="txtRut" placeholder="Ingrese RUT aqui" maxlength="9">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtNombre">Nombres</label>
                        <input type="text" name="txtNombre" class="form-control" id="id_txtNombre"
-                            placeholder="Ingrese sus nombres aqui" required>
+                            placeholder="Ingrese sus nombres aqui">
                     </div>
                     <div class="form-group">
                         <label for="id_txtApellido">Apellidos</label>
                        <input type="text" name="txtApellido" class="form-control" id="id_txtApellido"
-                            placeholder="Ingrese sus apellidos aqui" required>
+                            placeholder="Ingrese sus apellidos aqui">
                     </div>
                     <div class="form-group">
                         <label for="id_txtEmail">Email</label>
                        <input type="email" name="txtEmail" class="form-control" id="id_txtEmail"
-                            aria-describedby="emailHelp" placeholder="Ingrese su email aquí" required>
+                            aria-describedby="emailHelp" placeholder="Ingrese su email aquí">
                     </div>
                    
                      <div class="form-group">
                         <label for="id_txtDireccion">Direccion</label>
                        <input type="text" name="txtDireccion" class="form-control" id="id_txtDireccion"
-                        placeholder="Ingrese su direccion aqui" required> 
+                        placeholder="Ingrese su direccion aqui"> 
                     </div>
                     <div class="form-group">
                         <label for="id_txtTelefono">Telefono</label>
-                        <input type="tel" maxlength="9" class="form-control" name="txtTelefono" required=""
+                        <input type="tel" maxlength="9" class="form-control" name="txtTelefono"
                         
                             id="id_txtTelefono" placeholder="Ingrese su telefono aqui, maximo 9 digitos">
                     </div>
                     <div class="form-group">
                         <label for="id_txtRepetirTelefono">Repetir telefono</label>
-                        <input type="tel" class="form-control" name="txtRepetirTelefono" required=""
+                        <input type="tel" class="form-control" name="txtRepetirTelefono"
                             id="id_txtRepetirTelefono" placeholder="Ingrese otra vez su numero aqui"
                             maxlength="9">
                     </div>
 
                     <div class="form-group">
                         <label for="id_txtFechaNacimiento">Fecha de nacimiento</label>
-                        <input type="date" max="2010-12-31" class="form-control" name="txtFechaNacimiento" required=""
+                        <input type="date" max="2010-12-31" class="form-control" name="txtFechaNacimiento"
                             id="id_txtFechaNacimiento" >
                     </div>
                     <div class="form-group">
                         <label for="id_txtContrasena">Contraseña</label>
-                        <input type="password" class="form-control" name="txtContrasena" required=""
+                        <input type="password" class="form-control" name="txtContrasena"
                             id="id_txtContrasena" placeholder="Ingrese su contraseña">
                     </div>
                     <div class="form-group">
                         <label for="id_txtRepetirContrasena">Repetir Contraseña</label>
-                        <input type="password" class="form-control" name="txtRepetirContrasena" required=""
+                        <input type="password" class="form-control" name="txtRepetirContrasena"
                             id="id_txtRepetirContrasena" placeholder="Repita su contraseña">
                     </div>
                     
@@ -92,7 +92,7 @@
                         <h3>
                             Tipos de peliculas
                         </h3>
-                            <select  class="required" name="categorias">
+                            <select name="categorias">
                                 <option value="">-- Seleccionar --</option>
                                 <option value="Terror clasico">Terror clasico</option>
                                 <option value="Terror supenso">Terror supenso</option>
@@ -102,11 +102,13 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <h3>
-                                Sexo
-                            </h3>
-                                <input type="radio" name="sexo" class="required"> Masculino
-                                <input type="radio" name="sexo" class="required"> Femenino
+                                <h3>
+                                    Sexo
+                                </h3>
+                                <input type="radio" name="sexo" id="id_masculino">
+                                <label for="id_masculino">Masculino</label> <br>
+                                <input type="radio" name="sexo" id="id_femenino">
+                                <label for="id_femenino">Femenino</label>
                         </div>
                         <div class="form-check">
                       
@@ -119,28 +121,6 @@
                         </div>
 
                 </form>
-             <div  id="contenedor_registros" >
-                <div>
-                    <table id="tablaprueba" class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th>Run</th>
-                            <th>Nombre</th>
-                            <th>Correo / ususario</th>
-                            <th>Password</th>
-                            
-                          
-                          </tr>
-                        </thead>
-                        <tbody>
-                         
-                          
-                        </tbody>
-                      </table>
-                </div>
-            </div> 
-            
-            
             </div>
         </div>
     </div>
@@ -153,11 +133,11 @@
 
  
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="/DOCS/js/animacion_inicio.js"></script>
-    <script src="/DOCS/js/validacion.js"></script>
-    <script src="/DOCS/js/validacion_run.js"></script>
-    <script src="/DOCS/js/mensajes_es.js"></script>
-    <script src="/DOCS/js/agregar_formulario.js"></script>
+    <script src="./js/funcion_animacion.js"></script>
+    <script src="./js/validacion.js"></script>
+    <script src="./js/validacion_run.js"></script>
+    <script src="./js/mensajes_es.js"></script>
+    <!-- <script src="./js/agregar_formulario.js"></script> -->
     <!-- <script src="/DOCS/js/contrasena.js"></script> -->
 
     

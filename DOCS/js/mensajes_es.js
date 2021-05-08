@@ -1,6 +1,8 @@
 $.extend($.validator.messages, {
 
     required: "Este campo es requerido.",
+    
+    rut: "Por favor, escriba un rut valido",
 
     remote: "Por favor, llene este campo.",
 

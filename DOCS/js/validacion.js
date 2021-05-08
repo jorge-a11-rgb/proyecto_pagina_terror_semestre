@@ -6,9 +6,9 @@ $(document).ready(function () {
                 minlength: 3
 
             },
-            rut: {
+            txtRut: {
                 required: true,
-                checkRut();
+                rut: true
             },
             txtApellido: {
                 required: true,

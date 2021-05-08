@@ -20,39 +20,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
     crossorigin="anonymous"></script>
-     <!-- Importamos el estilo css de la pagina correspondiente -->
     <link rel="stylesheet" href="/DOCS/CSS/estilo_servicio_web.css">
 
     <title>Datos de peliculas</title>
 </head>
 
 <body>
-    <!-- Creamos un conetendor general para la pagina -->
     <div class="container">
         <div class="container">
-             <!--Creamos un conetendor de clase row para escribir las filas donde ira la informacion del servicio web -->
         <div class="row">
-                <!-- Creamos un conetendor con un titulo que usaremos para orientar al usuario -->
-            <h1>Datos de otras peliculas </h1>
+            <h1>Datos de peliculas interesantes</h1>
 
         </div>
         <div class="row">
             <button type="button" class="btn btn-danger" id="btn-obtener">Obtener Datos</button>
         </div>
-    <!-- Creamos la tabla con los nombres de las filas -->
+
         <div class="row">
             <table id="tabla-categorias" class="table table-hover"  >
                 <thead>
                   <tr>
-                                                    
-                     <th scope="col"> Nombre pelicula </th>
-                    <th scope="col"> Fecha de estreno </th>
-                    <th scope="col"> Imagen de pelicula</th>
+                                                      <th scope="col">#</th>
+                    <th scope="col"> Nombre pelicula </th>
+                    <th scope="col"> Fecha de estreno</th>
+                    <th scope="col"> Imagen pelicula</th>
                     <th scope="col"> Valoracion</th>
-                    
                   </tr>
                 </thead>
-                    <!-- Contenedor donde se gauadaran los datos -->
                 <tbody>
                  
                   
@@ -64,13 +58,11 @@
 
         
     </div>
-         <!-- Creamos un link para volver a la pagina principal -->
     <footer>
        
                    <a href="./index.html">Volver</a>
 
     </footer>
-         <!-- Importamos la hoja JS de json para aplicar la busqueda de datos -->
     <script src="/DOCS/js/servico_web_datos.js"></script>
 </body>
 
