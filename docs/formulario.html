@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,13 @@
     <!-- Implementacion jQuery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Implementacion jQuery validate plugin -->
-    <script language="javascript" type="text/javascript"
-        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
     <!-- Implementacion css -->
     <link href="./CSS/estilo_formulario.css" rel="stylesheet" type="text/css" />
     <!-- Implementacion js -->
     <link rel="stylesheet" href="./js/funcion_animacion.js">
-  
-
+    <!-- Titulo -->
+    <title>Formulario</title>
 </head>
 
 <body>
@@ -37,9 +36,9 @@
                 </p>
 
             </div>
-                <form method="POST" id="formulario1" action="">
+                <form method="POST" id="formulario1">
                      <div class="form-group">
-                        <label for="rut">RUN</label>
+                        <label for="id_rut">RUN</label>
                        <input class="form-text" type="text" id="id_rut" name="txtRut" placeholder="Ingrese RUT aqui" maxlength="9">
                     </div>
 
@@ -55,8 +54,7 @@
                     </div>
                     <div class="form-group">
                         <label for="id_txtEmail">Email</label>
-                       <input type="email" name="txtEmail" class="form-control" id="id_txtEmail"
-                            aria-describedby="emailHelp" placeholder="Ingrese su email aquí">
+                       <input type="email" name="txtEmail" class="form-control" id="id_txtEmail" placeholder="Ingrese su email aquí">
                     </div>
                    
                      <div class="form-group">
@@ -123,7 +121,6 @@
                       
                         <button type="reset" class="btn btn-primarybtn btn-outline-primary">Limpiar</button>
                     </div>
-                        </div>
 
                 </form>
             </div>
@@ -149,4 +146,4 @@
     
 </body>
 
-</html>>
+</html>
